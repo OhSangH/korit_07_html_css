@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>common</title>
+  </head>
+  <body bgcolor="6f6f6f">
+    <h1>인풋 요소 공통(대부분) 속성</h1>
+    <form>
+      <label for="valueID">value</label>
+      <input type="text" name="value" id="valueID" value="지정됨" />
+      <br /><br />
+      <label for="autofocusID">autofocus</label>
+      <input
+        type="text"
+        name="autofocus"
+        id="autofocusID"
+        placeholder="자동 포커스됨"
+        autofocus
+      />
+      <br /><br />
+      <label for="readonlyID">readonly</label>
+      <input
+        type="text"
+        name="readonly"
+        id="readonlyID"
+        value="읽기만 가능. 전송됨"
+        readonly
+      />
+      <br /><br />
+      <label for="disabledID">disabledID</label>
+      <input
+        type="text"
+        name="disabled"
+        id="disabledID"
+        disabled
+        placeholder="입력 불가, 전송 안됨"
+      />
+      <br /><br />
+      <label for="requieredID">requiered</label>
+      <input
+        type="text"
+        name="requiered"
+        id="requieredID"
+        required
+        placeholder="필수 입력"
+      />
+      <br /><br />
+      <input type="radio" id="f_apple" name="fruit" value="apple" />
+      <label for="f_apple">사과</label>
+      <input type="radio" id="f_grape" name="fruit" value="grape" checked />
+      <label for="f_grape">포도</label>
+      <input type="radio" id="f_orange" name="fruit" value="orange" disabled />
+      <label for="f_orange">오랜지 (품절)</label><br /><br />
+      <button type="submit">제출</button>
+    </form>
+  </body>
+</html>
