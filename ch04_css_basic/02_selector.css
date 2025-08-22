@@ -1,0 +1,39 @@
+/* 모든 요소 선택 */
+* {
+  font-weight: bold;
+  color: darkorange;
+}
+/* 별표(*)는 페이지 안에 있는 모든 요소라는 의미 */
+* {
+  color: plum;
+}
+/* CSS 요소가 적용된 결과 글자 색이 plum이 된다.
+이로 알 수 있는 것이 두개의 선택자가 같을 경우 후발로 작성되는 
+코드가 우선순위가 가지며 기존 적용된 속성이 덮어 쓰기가 된다. */
+p {
+  color: olivedrab;
+}
+/* 태그 선택자는 기본 선택자로 작성한 모든 요소 선택자보다 우선순위를 가진다. */
+.blue {
+  color: lightblue;
+}
+
+p.blue {
+  color: slateblue;
+}
+
+.blue.dark {
+  color: mediumblue;
+}
+
+#red {
+  color: tomato;
+}
+
+span,
+.dark,
+#red {
+  text-decoration: underline;
+}
+/* id 선택자 */
+/* 한페이지에서 여러 요소를 공유해서 사용할 수 있는 클래스와 달리 id는 딱 한가지 요소에만 고유하게 사용할 수 있다. id를 불러오는 구분자는 #입니다 */

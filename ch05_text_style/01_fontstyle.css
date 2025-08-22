@@ -1,0 +1,13 @@
+p {
+  font-style: italic;
+  font-style: oblique;
+  font-style: normal;
+
+  /* font-weight 는 굵기를 선택하는 것이고
+    100~900, bold, normal로 있으면
+    서체마다 지원하는 굵기가 있으므로 확인해야한다.
+  */
+  font-weight: bold;
+  font-weight: normal;
+  font-weight: 100;
+}

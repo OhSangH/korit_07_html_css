@@ -1,0 +1,61 @@
+.outer li {
+  color: olivedrab;
+}
+/* .outer의 li로 outer클래스의 자손 요소인 li 태그들에게 색상이 적용되어다.
+  ol 요소의 li는 아무 색상이 적용되지 않고 검은핵으로 존재 하지 않는다.
+  그리고 추가로 확인 할 수 있는 것은 위 코드로 작성된 스타일은 이후 자손 / 손주 / 증손자
+  하위 항목들도 모두 영향을 받는다.
+*/
+.outer > li {
+  color: dodgerblue;
+}
+/* 
+참고 :
+.outer li 가 없이 .outer > li를 적용하면 .outer의 자손까지 적용된다는 것을 알 수 있다.
+이경우는 서체나 텍스트 관련 등 일부 CSS 속성들이 자식들에게 자동 상속되기 때문이다.
+이 때문에 자동 상속 되는 속성이 있다면 이를 덮어쓰는 다른 선택자와 속성을 지정하여야지 상속되지 않는다.
+*/
+
+.outer > li > ul {
+  text-decoration: underline;
+}
+
+/* 뒤따르는 모든 동생들 결 합자 */
+.starter ~ li {
+  font-style: italic;
+}
+/* 뒤따르는 바로 다음 동생들 결 합자 */
+.starter + li {
+  font-weight: bold;
+}
+
+ol li:first-child,
+li:last-child {
+  color: yellowgreen;
+}
+
+.outer > li:not(:last-child) {
+  text-decoration: line-through;
+}
+
+ul:not(.outer) li {
+  font-weight: bold;
+}
+
+/* 위 선택자를 해석하면 .outer가 아닌 ul 태그중 자손 li의 폰트를 볼드체로 바꾸는 요소이다. */
+
+/* n번째인 요소인 가상 클래스 */
+/* odd, even을 사용하여 홀수, 짝수도 선택이 가능하다 */
+/* 3n 형식으로 넣어 두면 3,6,9,12등 배수로도 가능하다. */
+ol li:nth-child(3) {
+  font-weight: bold;
+  color: deeppink;
+}
+
+li:hover {
+  font-weight: bold;
+  color: blue;
+}
+/* 
+  :hover의 경우 마우스를 가져다 대면 해당 스타일이 동작하게 되는 가상클래스이다.
+*/
