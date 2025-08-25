@@ -1,0 +1,18 @@
+.outer {
+  width: 200px;
+  height: 200px;
+  background-color: #5f5f5f;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+}
+.inner {
+  height: 100%;
+  width: 100%;
+  background-image: url(../learning_log/Gemini_Generated_Image_c524cac524cac524.png);
+  background-size: contain;
+  background-position: center;
+}
+/* span {
+  display: inline-block;
+} */

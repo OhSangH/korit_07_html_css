@@ -4,8 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello,HTML</title>
+    <style>
+      tr:nth-child(even) {
+        background-color: yellow;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello,HTML</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>1</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>4</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
